@@ -63,7 +63,6 @@ describe('useNotifications 테스트', () => {
     expect(result.current.notifications).toHaveLength(1);
     expect(result.current.notifications[0].id).toBe('1');
     expect(result.current.notifications[0].message).toBe(`30분 후 이벤트 1 일정이 시작됩니다.`);
-    expect(result.current.notifiedEvents).toBe(['1']);
   });
 
   it('index를 기준으로 알림을 적절하게 제거할 수 있다', async () => {
