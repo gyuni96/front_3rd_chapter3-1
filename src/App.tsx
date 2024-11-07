@@ -33,14 +33,14 @@ import {
 } from '@chakra-ui/react';
 import { useRef } from 'react';
 
-import MonthView from './pages/MonthView.tsx';
-import WeekView from './pages/WeekView.tsx';
 import { useAddOrUpdateEvent } from './hooks/useAddOrUpdateEvent.ts';
 import { useCalendarView } from './hooks/useCalendarView.ts';
 import { useEventForm } from './hooks/useEventForm.ts';
 import { useEventOperations } from './hooks/useEventOperations.ts';
 import { useNotifications } from './hooks/useNotifications.ts';
 import { useSearch } from './hooks/useSearch.ts';
+import MonthView from './pages/MonthView.tsx';
+import WeekView from './pages/WeekView.tsx';
 import { Event, EventForm, RepeatType } from './types';
 import { getTimeErrorMessage } from './utils/timeValidation';
 

@@ -195,42 +195,42 @@ describe('formatWeek', () => {
     const targetDate = new Date('2024-11-15');
     const week = formatWeek(targetDate);
 
-    expect(week).toEqual('2024년 11월 2주');
+    expect(week).toBe('2024년 11월 2주');
   });
 
   it('월의 첫 주에 대해 올바른 주 정보를 반환한다', () => {
     const targetDate = new Date('2024-11-04');
     const week = formatWeek(targetDate);
 
-    expect(week).toEqual('2024년 11월 1주');
+    expect(week).toBe('2024년 11월 1주');
   });
 
   it('월의 마지막 주에 대해 올바른 주 정보를 반환한다', () => {
     const targetDate = new Date('2024-11-30');
     const week = formatWeek(targetDate);
 
-    expect(week).toEqual('2024년 11월 4주');
+    expect(week).toBe('2024년 11월 4주');
   });
 
   it('연도가 바뀌는 주에 대해 올바른 주 정보를 반환한다', () => {
     const targetDate = new Date('2024-12-31');
     const week = formatWeek(targetDate);
 
-    expect(week).toEqual('2025년 1월 1주');
+    expect(week).toBe('2025년 1월 1주');
   });
 
   it('윤년 2월의 마지막 주에 대해 올바른 주 정보를 반환한다', () => {
     const targetDate = new Date('2024-02-29');
     const week = formatWeek(targetDate);
 
-    expect(week).toEqual('2024년 2월 5주');
+    expect(week).toBe('2024년 2월 5주');
   });
 
   it('평년 2월의 마지막 주에 대해 올바른 주 정보를 반환한다', () => {
     const targetDate = new Date('2023-02-28');
     const week = formatWeek(targetDate);
 
-    expect(week).toEqual('2023년 3월 1주');
+    expect(week).toBe('2023년 3월 1주');
   });
 });
 
@@ -239,14 +239,14 @@ describe('formatMonth', () => {
     const targetDate = new Date('2024-07-10');
     const month = formatMonth(targetDate);
 
-    expect(month).toEqual('2024년 7월');
+    expect(month).toBe('2024년 7월');
   });
 
   it("2024년 4월 24일을 '2024년 4월'로 반환한다", () => {
     const targetDate = new Date('2024-04-24');
     const month = formatMonth(targetDate);
 
-    expect(month).toEqual('2024년 4월');
+    expect(month).toBe('2024년 4월');
   });
 });
 

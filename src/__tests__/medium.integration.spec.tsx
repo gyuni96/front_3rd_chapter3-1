@@ -9,8 +9,8 @@ import {
   setupMockHandlerUpdating,
 } from '../__mocks__/handlersUtils';
 import App from '../App';
-import { Event } from '../types';
 import { server } from '../setupTests';
+import { Event } from '../types';
 
 // ! HINT. 이 유틸을 사용해 리액트 컴포넌트를 렌더링해보세요.
 const setup = (element: ReactElement) => {
