@@ -6,6 +6,7 @@ import { findOverlappingEvents } from '../utils/eventOverlap';
 
 export const useAddOrUpdateEvent = (
   resetForm: () => void,
+  // eslint-disable-next-line no-unused-vars
   saveEvent: (_eventData: Event | EventForm) => Promise<void>
 ) => {
   const toast = useToast();
